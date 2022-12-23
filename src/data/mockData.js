@@ -399,16 +399,22 @@ export const mockBarData = [
 
 export const mockPieData = [
   {
-    id: "hack",
-    label: "hack",
+    id: "python",
+    label: "python",
     value: 239,
     color: "hsl(104, 70%, 50%)",
   },
   {
-    id: "make",
-    label: "make",
+    id: "php",
+    label: "php",
     value: 170,
     color: "hsl(162, 70%, 50%)",
+  },
+  {
+    id: "javascript",
+    label: "javascript",
+    value: 584,
+    color: "hsl(201, 70%, 50%)",
   },
   {
     id: "go",
@@ -417,16 +423,10 @@ export const mockPieData = [
     color: "hsl(291, 70%, 50%)",
   },
   {
-    id: "lisp",
-    label: "lisp",
+    id: "java",
+    label: "java",
     value: 503,
     color: "hsl(229, 70%, 50%)",
-  },
-  {
-    id: "scala",
-    label: "scala",
-    value: 584,
-    color: "hsl(344, 70%, 50%)",
   },
 ];
 
@@ -590,6 +590,60 @@ export const mockLineData = [
       {
         x: "others",
         y: 170,
+      },
+    ],
+  },
+  {
+    id: "germany",
+    color: "hsl(249, 70%, 50%)",
+    data: [
+      {
+        x: "plane",
+        y: 46,
+      },
+      {
+        x: "helicopter",
+        y: 18,
+      },
+      {
+        x: "boat",
+        y: 200,
+      },
+      {
+        x: "train",
+        y: 202,
+      },
+      {
+        x: "subway",
+        y: 149,
+      },
+      {
+        x: "bus",
+        y: 118,
+      },
+      {
+        x: "car",
+        y: 255,
+      },
+      {
+        x: "moto",
+        y: 168,
+      },
+      {
+        x: "bicycle",
+        y: 10,
+      },
+      {
+        x: "horse",
+        y: 183,
+      },
+      {
+        x: "skateboard",
+        y: 102,
+      },
+      {
+        x: "others",
+        y: 136,
       },
     ],
   },
