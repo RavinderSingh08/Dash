@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route, Routes } from "react-router";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -18,16 +18,21 @@ import Geography from "./scenes/geography";
 
 function App() {
   const [theme, colorMode] = useMode();
-  const [isSidebar, setIsSidebar] = useState(true);
 
   return (
-    <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
+    <ColorModeContext.Provider
+      // @ts-ignore
+      value={colorMode}
+    >
+      <ThemeProvider
+        // @ts-ignore
+        theme={theme}
+      >
         <CssBaseline />
         <div className="app">
-          <Sidebar isSidebar={isSidebar} />
+          <Sidebar />
           <main className="content">
-            <Topbar setIsSidebar={setIsSidebar} />
+            <Topbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
